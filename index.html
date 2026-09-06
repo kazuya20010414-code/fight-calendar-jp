@@ -22,6 +22,8 @@
     --rizin: #b8860b;
     --deep: #1f5fa8;
     --one: #147a52;
+    --k1: #7c3aed;
+    --rise: #c2255c;
   }
 
   @media (prefers-color-scheme: dark) {
@@ -38,6 +40,8 @@
       --rizin: #d9a83b;
       --deep: #4f8fd6;
       --one: #35a877;
+      --k1: #a789f0;
+      --rise: #e0619b;
     }
   }
   :root[data-theme="dark"] {
@@ -53,6 +57,8 @@
     --rizin: #d9a83b;
     --deep: #4f8fd6;
     --one: #35a877;
+    --k1: #a789f0;
+    --rise: #e0619b;
   }
 
   * { box-sizing: border-box; }
@@ -390,7 +396,9 @@ const DATA = {
     { "id": "ufc", "name": "UFC" },
     { "id": "rizin", "name": "RIZIN" },
     { "id": "deep", "name": "DEEP" },
-    { "id": "one", "name": "ONE Championship" }
+    { "id": "one", "name": "ONE Championship" },
+    { "id": "k1", "name": "K-1" },
+    { "id": "rise", "name": "RISE" }
   ],
   "events": [
     { "id": "ufc-fn288", "org": "ufc", "title": "UFC Fight Night 288", "date": "2026-09-12", "location": "Desert Diamond Arena, グレンデール, アリゾナ州, アメリカ", "sourceUrl": "https://en.wikipedia.org/wiki/UFC_Fight_Night:_Silva_vs._Delgado" },
@@ -427,11 +435,25 @@ const DATA = {
     { "id": "one-ff175", "org": "one", "title": "ONE Friday Fights 175 & The Inner Circle 35", "date": "2026-10-16", "location": "バンコク, タイ", "sourceUrl": "https://www.onefc.com/events/" },
     { "id": "one-samurai4", "org": "one", "title": "ONE SAMURAI 4", "date": "2026-10-17", "location": "有明アリーナ, 東京, 日本", "sourceUrl": "https://www.onefc.com/events/" },
     { "id": "one-ff176", "org": "one", "title": "ONE Friday Fights 176 & The Inner Circle 36", "date": "2026-10-30", "location": "バンコク, タイ", "sourceUrl": "https://www.onefc.com/events/" },
-    { "id": "one-fn49", "org": "one", "title": "ONE Fight Night 49", "date": "2026-11-07", "location": "Lumpinee Stadium, バンコク, タイ", "sourceUrl": "https://en.wikipedia.org/wiki/2026_in_ONE_Championship" }
+    { "id": "one-fn49", "org": "one", "title": "ONE Fight Night 49", "date": "2026-11-07", "location": "Lumpinee Stadium, バンコク, タイ", "sourceUrl": "https://en.wikipedia.org/wiki/2026_in_ONE_Championship" },
+    { "id": "k1-worldmax-2026", "org": "k1", "title": "K-1 WORLD MAX 2026", "date": "2026-09-12", "location": "国立代々木競技場 第二体育館, 東京", "sourceUrl": "https://www.k-1.co.jp/schedule" },
+    { "id": "k1-sangju-korea-2026", "org": "k1", "title": "K-1 FIGHTING NETWORK in Sangju Korea 2026", "date": "2026-09-19", "location": "慶尚北道尚州市, 韓国", "sourceUrl": "https://www.k-1.co.jp/schedule" },
+    { "id": "krush-192", "org": "k1", "title": "Krush.192", "date": "2026-09-26", "location": "後楽園ホール, 東京", "sourceUrl": "https://www.k-1.co.jp/schedule" },
+    { "id": "krush-193", "org": "k1", "title": "Krush.193", "date": "2026-10-31", "location": "後楽園ホール, 東京", "sourceUrl": "https://www.k-1.co.jp/schedule" },
+    { "id": "k1-1123", "org": "k1", "title": "K-1", "date": "2026-11-23", "location": "後楽園ホール, 東京", "sourceUrl": "https://www.k-1.co.jp/schedule" },
+    { "id": "krush-194", "org": "k1", "title": "Krush.194", "date": "2026-12-13", "location": "後楽園ホール, 東京", "sourceUrl": "https://www.k-1.co.jp/schedule" },
+    { "id": "k1-climax-1229", "org": "k1", "title": "K-1 (年間クライマックス)", "date": "2026-12-29", "location": "横浜BUNTAI, 神奈川", "sourceUrl": "https://www.k-1.co.jp/schedule" },
+
+    { "id": "rise-worldseries-tokyo2", "org": "rise", "title": "ABEMA presents RISE WORLD SERIES 2026 TOKYO.2", "date": "2026-09-19", "location": "EBARA WAVE ARENAおおた, 東京", "sourceUrl": "https://rise-rc.com/schedule/" },
+    { "id": "rise-west32", "org": "rise", "title": "RISE WEST.32", "date": "2026-10-04", "location": "西鉄ホール, 福岡", "sourceUrl": "https://rise-rc.com/schedule/" },
+    { "id": "rise-202", "org": "rise", "title": "RISE202", "date": "2026-10-17", "location": "後楽園ホール, 東京", "sourceUrl": "https://rise-rc.com/schedule/" },
+    { "id": "rise-203", "org": "rise", "title": "RISE203", "date": "2026-11-08", "location": "後楽園ホール, 東京", "sourceUrl": "https://rise-rc.com/schedule/" },
+    { "id": "rise-west33", "org": "rise", "title": "RISE WEST.33", "date": "2026-12-06", "location": "西鉄ホール, 福岡", "sourceUrl": "https://rise-rc.com/schedule/" },
+    { "id": "rise-worldseries-1220", "org": "rise", "title": "RISE WORLD SERIES 2026", "date": "2026-12-20", "location": "Kanadevia Hall, 東京", "sourceUrl": "https://rise-rc.com/schedule/" }
   ]
 };
 
-const ORG_VAR = { ufc: "--ufc", rizin: "--rizin", deep: "--deep", one: "--one" };
+const ORG_VAR = { ufc: "--ufc", rizin: "--rizin", deep: "--deep", one: "--one", k1: "--k1", rise: "--rise" };
 const active = new Set(DATA.organizations.map(o => o.id));
 let month;
 let view = "cal";
