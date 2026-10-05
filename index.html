@@ -391,7 +391,7 @@
 
 <script>
 const DATA = {
-  "lastUpdated": "2026-09-28",
+  "lastUpdated": "2026-10-05",
   "organizations": [
     { "id": "ufc", "name": "UFC" },
     { "id": "rizin", "name": "RIZIN" },
@@ -401,7 +401,6 @@ const DATA = {
     { "id": "rise", "name": "RISE" }
   ],
   "events": [
-    { "id": "ufc-331", "org": "ufc", "title": "UFC 331: Van vs. Pantoja 2", "date": "2026-09-19", "location": "Crypto.com Arena, ロサンゼルス, カリフォルニア州, アメリカ", "sourceUrl": "https://en.wikipedia.org/wiki/UFC_331" },
     { "id": "ufc-fn289", "org": "ufc", "title": "UFC Fight Night 289: Rosas Jr. vs. Barcelos", "date": "2026-09-26", "location": "Meta Apex, ラスベガス, ネバダ州, アメリカ", "sourceUrl": "https://en.wikipedia.org/wiki/UFC_Fight_Night:_Rosas_Jr._vs._Barcelos" },
     { "id": "ufc-332", "org": "ufc", "title": "UFC 332: Silva vs. Wang", "date": "2026-10-03", "location": "Delta Center, ソルトレイクシティ, ユタ州, アメリカ", "sourceUrl": "https://en.wikipedia.org/wiki/UFC_332" },
     { "id": "ufc-fn290", "org": "ufc", "title": "UFC Fight Night 290: Allen vs. Duncan", "date": "2026-10-10", "location": "Meta Apex, ラスベガス, ネバダ州, アメリカ", "sourceUrl": "https://en.wikipedia.org/wiki/UFC_Fight_Night:_Allen_vs._Duncan" },
@@ -410,19 +409,18 @@ const DATA = {
     { "id": "ufc-fn292", "org": "ufc", "title": "UFC Fight Night 292: Moicano vs. Nolan", "date": "2026-10-31", "location": "Meta Apex, ラスベガス, ネバダ州, アメリカ", "sourceUrl": "https://en.wikipedia.org/wiki/UFC_Fight_Night:_Moicano_vs._Nolan" },
     { "id": "ufc-fn293", "org": "ufc", "title": "UFC Fight Night 293: Bonfim vs. Brady", "date": "2026-11-07", "location": "Meta Apex, ラスベガス, ネバダ州, アメリカ", "sourceUrl": "https://en.wikipedia.org/wiki/UFC_Fight_Night:_Bonfim_vs._Brady" },
     { "id": "ufc-334", "org": "ufc", "title": "UFC 334: Gane vs. Hokit", "date": "2026-11-14", "location": "Madison Square Garden, ニューヨーク, アメリカ", "sourceUrl": "https://en.wikipedia.org/wiki/UFC_334" },
-    { "id": "ufc-fn294", "org": "ufc", "title": "UFC Fight Night: Doha", "date": "2026-11-21", "location": "ABHA Arena, ドーハ, カタール", "sourceUrl": "https://www.ufc.com/event/ufc-fight-night-november-21-2026" },
-    { "id": "ufc-335", "org": "ufc", "title": "UFC 335: Strickland vs. Imavov", "date": "2026-12-12", "location": "T-Mobile Arena, ラスベガス, ネバダ州, アメリカ", "sourceUrl": "https://en.wikipedia.org/wiki/UFC_335" },
+    { "id": "ufc-fn294", "org": "ufc", "title": "UFC Fight Night: Procházka vs. Stirling", "date": "2026-11-21", "location": "ABHA Arena, アルレイヤーン, カタール", "sourceUrl": "https://en.wikipedia.org/wiki/UFC_Fight_Night:_Proch%C3%A1zka_vs._Stirling" },
+    { "id": "ufc-335", "org": "ufc", "title": "UFC 335: Oliveira vs. Lopes", "date": "2026-12-12", "location": "T-Mobile Arena, ラスベガス, ネバダ州, アメリカ", "sourceUrl": "https://en.wikipedia.org/wiki/UFC_335" },
+    { "id": "ufc-fn-sydney", "org": "ufc", "title": "UFC Fight Night: Sydney", "date": "2027-02-07", "location": "Afterpay Arena, シドニー, オーストラリア", "sourceUrl": "https://www.ufc.com/event/ufc-fight-night-february-06-2027" },
 
     { "id": "rizin-landmark16", "org": "rizin", "title": "RIZIN LANDMARK 16 in NAGASAKI", "date": "2026-10-03", "location": "長崎スタジアムシティ HAPPINESS ARENA, 長崎（RIZIN初開催地）", "sourceUrl": "https://jp.rizinff.com/_ct/17852438" },
     { "id": "rizin-landmark17", "org": "rizin", "title": "RIZIN LANDMARK 17 in CHIBA", "date": "2026-11-08", "location": "LaLa arena TOKYO-BAY, 千葉（RIZIN初開催地）", "sourceUrl": "https://gonkaku.jp/articles/24362" },
     { "id": "rizin-oomisoka", "org": "rizin", "title": "大晦日RIZIN", "date": "2026-12-31", "location": "バンテリンドーム ナゴヤ", "sourceUrl": "https://jp.rizinff.com/_ct/17813466" },
 
-    { "id": "deep-osaka-4th", "org": "deep", "title": "DEEP OSAKA IMPACT 2026 4th ROUND", "date": "2026-09-20", "location": "錦秀会住吉区民センター 大ホール, 大阪", "sourceUrl": "https://www.deep2001.com/future/" },
     { "id": "deep-hamamatsu-2nd", "org": "deep", "title": "DEEP HAMAMATSU IMPACT 2026 2nd ROUND", "date": "2026-10-12", "location": "アクトシティ浜松 展示イベントホール", "sourceUrl": "https://www.deep2001.com/deep-hamamatsu-impact-2026-2nd-round/" },
     { "id": "deep-fight-challenge-3rd", "org": "deep", "title": "DEEP FIGHT CHALLENGE 2026 3rd ROUND", "date": "2026-10-30", "location": "恵比寿ガーデンルーム, 東京", "sourceUrl": "https://www.deep2001.com/future/" },
     { "id": "deep-134-impact", "org": "deep", "title": "DEEP 134 IMPACT", "date": "2026-11-22", "location": "New Pier Hall, 東京", "sourceUrl": "https://www.deep2001.com/deep-134-impact/" },
 
-    { "id": "one-ff171", "org": "one", "title": "ONE Friday Fights 171 & The Inner Circle 31", "date": "2026-09-18", "location": "バンコク, タイ", "sourceUrl": "https://www.onefc.com/events/" },
     { "id": "one-ff172", "org": "one", "title": "ONE Friday Fights 172 & The Inner Circle 32", "date": "2026-09-25", "location": "バンコク, タイ", "sourceUrl": "https://www.onefc.com/events/" },
     { "id": "one-ff173", "org": "one", "title": "ONE Friday Fights 173 & The Inner Circle 33", "date": "2026-10-02", "location": "バンコク, タイ", "sourceUrl": "https://www.onefc.com/events/" },
     { "id": "one-fn48", "org": "one", "title": "ONE Fight Night 48: Erdogan vs. Elliott", "date": "2026-10-03", "location": "バンコク, タイ", "sourceUrl": "https://www.onefc.com/events/" },
@@ -442,14 +440,12 @@ const DATA = {
     { "id": "one-fn50", "org": "one", "title": "ONE Fight Night 50", "date": "2026-12-12", "location": "Lumpinee Stadium, バンコク, タイ", "sourceUrl": "https://www.onefc.com/events/onefightnight50/" },
     { "id": "one-ff183", "org": "one", "title": "ONE Friday Fights 183", "date": "2026-12-18", "location": "Lumpinee Stadium, バンコク, タイ", "sourceUrl": "https://www.onefc.com/events/" },
 
-    { "id": "k1-sangju-korea-2026", "org": "k1", "title": "K-1 FIGHTING NETWORK in Sangju Korea 2026", "date": "2026-09-19", "location": "慶尚北道尚州市, 韓国", "sourceUrl": "https://www.k-1.co.jp/schedule/16687" },
     { "id": "krush-193", "org": "k1", "title": "Krush.193", "date": "2026-09-26", "location": "後楽園ホール, 東京", "sourceUrl": "https://www.k-1.co.jp/krush/schedule" },
     { "id": "krush-194", "org": "k1", "title": "Krush.194", "date": "2026-10-31", "location": "後楽園ホール, 東京", "sourceUrl": "https://www.k-1.co.jp/krush/schedule" },
-    { "id": "k1-1123", "org": "k1", "title": "K-1", "date": "2026-11-23", "location": "後楽園ホール, 東京", "sourceUrl": "https://www.k-1.co.jp/schedule/16670" },
+    { "id": "k1-1123", "org": "k1", "title": "K-1 REVENGE II", "date": "2026-11-23", "location": "後楽園ホール, 東京", "sourceUrl": "https://www.k-1.co.jp/schedule/16670" },
     { "id": "krush-195", "org": "k1", "title": "Krush.195", "date": "2026-12-13", "location": "後楽園ホール, 東京", "sourceUrl": "https://www.k-1.co.jp/krush/schedule" },
     { "id": "k1-worldmax-2026-final", "org": "k1", "title": "K-1 WORLD MAX 2026 Final8", "date": "2026-12-29", "location": "横浜BUNTAI, 神奈川", "sourceUrl": "https://www.k-1.co.jp/schedule/16669" },
 
-    { "id": "rise-worldseries-tokyo2", "org": "rise", "title": "ABEMA presents RISE WORLD SERIES 2026 TOKYO.2", "date": "2026-09-19", "location": "EBARA WAVE ARENAおおた, 東京", "sourceUrl": "https://rise-rc.com/event/ws2026tokyo2/" },
     { "id": "rise-west32", "org": "rise", "title": "RISE WEST.32", "date": "2026-10-04", "location": "西鉄ホール, 福岡", "sourceUrl": "https://rise-rc.com/event/west32/" },
     { "id": "rise-202", "org": "rise", "title": "RISE202", "date": "2026-10-17", "location": "後楽園ホール, 東京", "sourceUrl": "https://rise-rc.com/event/202/" },
     { "id": "rise-203", "org": "rise", "title": "RISE203", "date": "2026-11-08", "location": "後楽園ホール, 東京", "sourceUrl": "https://rise-rc.com/event/203/" },
