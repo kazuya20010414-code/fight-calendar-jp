@@ -391,7 +391,7 @@
 
 <script>
 const DATA = {
-  "lastUpdated": "2026-11-02",
+  "lastUpdated": "2026-11-09",
   "organizations": [
     { "id": "ufc", "name": "UFC" },
     { "id": "rizin", "name": "RIZIN" },
@@ -401,15 +401,13 @@ const DATA = {
     { "id": "rise", "name": "RISE" }
   ],
   "events": [
-    { "id": "ufc-333", "org": "ufc", "title": "UFC 333: Volkanovski vs. Evloev", "date": "2026-10-24", "location": "Etihad Arena, アブダビ, UAE", "sourceUrl": "https://en.wikipedia.org/wiki/UFC_333" },
-    { "id": "ufc-fn292", "org": "ufc", "title": "UFC Fight Night 292: Moicano vs. Nolan", "date": "2026-10-31", "location": "Meta Apex, ラスベガス, ネバダ州, アメリカ", "sourceUrl": "https://en.wikipedia.org/wiki/UFC_Fight_Night:_Moicano_vs._Nolan" },
     { "id": "ufc-fn293", "org": "ufc", "title": "UFC Fight Night 293: Bonfim vs. Brady", "date": "2026-11-07", "location": "Meta Apex, ラスベガス, ネバダ州, アメリカ", "sourceUrl": "https://en.wikipedia.org/wiki/UFC_Fight_Night:_Bonfim_vs._Brady" },
     { "id": "ufc-334", "org": "ufc", "title": "UFC 334: Gane vs. Hokit", "date": "2026-11-14", "location": "Madison Square Garden, ニューヨーク, アメリカ", "sourceUrl": "https://en.wikipedia.org/wiki/UFC_334" },
     { "id": "ufc-fn294", "org": "ufc", "title": "UFC Fight Night: Procházka vs. Stirling", "date": "2026-11-21", "location": "ABHA Arena, ドーハ, カタール", "sourceUrl": "https://en.wikipedia.org/wiki/UFC_Fight_Night:_Proch%C3%A1zka_vs._Stirling" },
     { "id": "ufc-335", "org": "ufc", "title": "UFC 335: Oliveira vs. Lopes", "date": "2026-12-12", "location": "T-Mobile Arena, ラスベガス, ネバダ州, アメリカ", "sourceUrl": "https://en.wikipedia.org/wiki/UFC_335" },
     { "id": "ufc-fn-dallas", "org": "ufc", "title": "UFC Fight Night: Dallas", "date": "2027-01-16", "location": "American Airlines Center, ダラス, テキサス州, アメリカ", "sourceUrl": "https://cagesidepress.com/2026/10/24/ufc-heads-back-to-dallas-on-january-16-2027/" },
-    { "id": "ufc-336", "org": "ufc", "title": "UFC 336: Toronto", "date": "2027-01-30", "location": "Scotiabank Arena, トロント, オンタリオ州, カナダ", "sourceUrl": "https://cagesidepress.com/2026/10/17/ufc-336-announced-for-toronto-on-january-30/" },
-    { "id": "ufc-fn-sydney", "org": "ufc", "title": "UFC Fight Night: Sydney", "date": "2027-02-07", "location": "Afterpay Arena, シドニー, オーストラリア", "sourceUrl": "https://www.ufc.com/news/octagon-returns-down-under-ufc-fight-night-sydney-sunday-february-7" },
+    { "id": "ufc-336", "org": "ufc", "title": "UFC 336: Van vs. Kape", "date": "2027-01-30", "location": "Scotiabank Arena, トロント, オンタリオ州, カナダ", "sourceUrl": "https://cagesidepress.com/2026/10/24/prates-vs-morales-for-interim-gold-van-vs-kape-announced-for-ufc-336/" },
+    { "id": "ufc-fn-sydney", "org": "ufc", "title": "UFC Fight Night: Salkilld vs. Saint Denis", "date": "2027-02-07", "location": "Afterpay Arena, シドニー, オーストラリア", "sourceUrl": "https://cagesidepress.com/2026/10/27/quillan-salkilld-vs-benoit-saint-denis-set-to-headline-ufc-sydney-on-feb-6/" },
 
     { "id": "rizin-55", "org": "rizin", "title": "RIZIN.55", "date": "2026-11-08", "location": "LaLa arena TOKYO-BAY, 船橋, 千葉県", "sourceUrl": "https://gonkaku.jp/articles/24362" },
     { "id": "rizin-oomisoka", "org": "rizin", "title": "大晦日RIZIN", "date": "2026-12-31", "location": "バンテリンドーム ナゴヤ", "sourceUrl": "https://jp.rizinff.com/_ct/17813466" },
@@ -430,6 +428,16 @@ const DATA = {
     { "id": "one-ff182", "org": "one", "title": "ONE Friday Fights 182", "date": "2026-12-11", "location": "Lumpinee Stadium, バンコク, タイ", "sourceUrl": "https://www.onefc.com/events/" },
     { "id": "one-fn50", "org": "one", "title": "ONE Fight Night 50", "date": "2026-12-12", "location": "Lumpinee Stadium, バンコク, タイ", "sourceUrl": "https://www.onefc.com/events/onefightnight50/" },
     { "id": "one-ff183", "org": "one", "title": "ONE Friday Fights 183", "date": "2026-12-18", "location": "Lumpinee Stadium, バンコク, タイ", "sourceUrl": "https://www.onefc.com/events/" },
+    { "id": "one-ff184", "org": "one", "title": "ONE Friday Fights 184", "date": "2027-01-08", "location": "Lumpinee Stadium, バンコク, タイ", "sourceUrl": "https://www.ufcalendar.com/events/one-friday-fights-184-2027-01-08" },
+    { "id": "one-fn51", "org": "one", "title": "ONE Fight Night 51", "date": "2027-01-09", "location": "Lumpinee Stadium, バンコク, タイ", "sourceUrl": "https://www.ufcalendar.com/events/one-fight-night-51-2027-01-09" },
+    { "id": "one-ff185", "org": "one", "title": "ONE Friday Fights 185", "date": "2027-01-15", "location": "Lumpinee Stadium, バンコク, タイ", "sourceUrl": "https://www.ufcalendar.com/events/one-friday-fights-185-2027-01-15" },
+    { "id": "one-ff186", "org": "one", "title": "ONE Friday Fights 186", "date": "2027-01-22", "location": "Lumpinee Stadium, バンコク, タイ", "sourceUrl": "https://www.ufcalendar.com/events/one-friday-fights-186-2027-01-22" },
+    { "id": "one-ff187", "org": "one", "title": "ONE Friday Fights 187", "date": "2027-01-29", "location": "Lumpinee Stadium, バンコク, タイ", "sourceUrl": "https://www.ufcalendar.com/events/one-friday-fights-187-2027-01-29" },
+    { "id": "one-ff188", "org": "one", "title": "ONE Friday Fights 188", "date": "2027-02-12", "location": "Lumpinee Stadium, バンコク, タイ", "sourceUrl": "https://www.ufcalendar.com/events/one-friday-fights-188-2027-02-12" },
+    { "id": "one-ff189", "org": "one", "title": "ONE Friday Fights 189", "date": "2027-02-19", "location": "Lumpinee Stadium, バンコク, タイ", "sourceUrl": "https://www.ufcalendar.com/events/one-friday-fights-189-2027-02-19" },
+    { "id": "one-fn52", "org": "one", "title": "ONE Fight Night 52", "date": "2027-02-20", "location": "Lumpinee Stadium, バンコク, タイ", "sourceUrl": "https://www.ufcalendar.com/events/one-fight-night-52-2027-02-20" },
+    { "id": "one-ff190", "org": "one", "title": "ONE Friday Fights 190", "date": "2027-02-26", "location": "Lumpinee Stadium, バンコク, タイ", "sourceUrl": "https://www.ufcalendar.com/events/one-friday-fights-190-2027-02-26" },
+    { "id": "one-fn53", "org": "one", "title": "ONE Fight Night 53", "date": "2027-03-06", "location": "Lumpinee Stadium, バンコク, タイ", "sourceUrl": "https://www.ufcalendar.com/events/one-fight-night-53-2027-03-06" },
 
     { "id": "krush-194", "org": "k1", "title": "Krush.194", "date": "2026-10-31", "location": "後楽園ホール, 東京", "sourceUrl": "https://www.k-1.co.jp/krush/schedule" },
     { "id": "k1-1123", "org": "k1", "title": "K-1 REVENGE II", "date": "2026-11-23", "location": "後楽園ホール, 東京", "sourceUrl": "https://www.k-1.co.jp/schedule/16670" },
